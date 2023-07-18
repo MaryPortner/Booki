@@ -12,6 +12,18 @@
     font-size: 1rem;
 }
 
+.sr-only {
+    border: 0;
+    clip: rect(0,0,0,0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
 .logo-img{
     width: 3.81813rem;
     height: 1.1875rem;
@@ -20,18 +32,21 @@
 ul {
     display: flex;
     list-style-type: none;
-
 }
 
 li{
     flex-direction: row;
     cursor: url("./../images/icones/pointer.svg"), auto;
-   
 }
 
 
-li.nav-item:hover{
-    color: red;
+li.header-navigation-item:hover{
+    color: var(--blue);
+}
+
+.lien-actif{
+    border-top: solid 1px var(--blue);
+    color : var(--blue);
 }
 
 .fa-solid {
