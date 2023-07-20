@@ -47,7 +47,6 @@ body {
     padding: 0 50px;
 }
 
-
 .sr-only {
 	border: 0 !important;
 	clip: rect(1px, 1px, 1px, 1px) !important;
@@ -90,6 +89,7 @@ li, li > a, button, input[type=submit],
 a{
     color: var(--black, #000000);
 }
+
 /* --------------------- HEADER ----------------------*/
 
 #main-header{
@@ -140,17 +140,19 @@ li.header-navigation-item  a:hover{
     border-top: solid 0.125rem var(--blue, #0065FC);
 }
 
-/* -------- filters --------*/
-.banner-header-title{
-    margin-bottom: 8px;
-}
 
-/* --------------------- SEARCH FILTER ----------------------*/
+/* --------------------- SEARCH FILTER HEADER et CARDS ----------------------*/
 
-.main-cards, .search-filter-header, .section-cards{
+.search-filter-header, .main-cards, .section-cards{
     display:flex;
     flex-direction: column;
     gap: 2.19rem;
+}
+
+/* --------------------- SEARCH FILTER HEADER ----------------------*/
+
+.banner-header-title{
+    margin-bottom: 8px;
 }
 
 .search-header-form{
@@ -211,6 +213,7 @@ button.filters-btn:hover{
     background-color: var(--blue-light, #DEEBFF);
 }
    
+
 /* ------------ MAIN CARD -------------*/
 .card {
     background-color: var(--white, #FFFFFF);
@@ -243,7 +246,7 @@ button.filters-btn:hover{
 }
 
 
-/****** Hebergements And Populaires ***********/
+/*------------- HEBERGEMENT AND POPULAIRES -------------*/
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
@@ -258,7 +261,7 @@ button.filters-btn:hover{
     /* box-sizing: border-box; */
 }
 
-/****** Hebergements ***********/
+/*------------- Hebergements -------------*/
 .hebergements {
     width: 65%;
     height: auto;
@@ -314,7 +317,7 @@ button.filters-btn:hover{
 }
 
 
-/****** Populaires ***********/
+/*------------- Populaires -------------*/
 .populaires {
     display:flex;
     flex-direction: column;
@@ -372,7 +375,7 @@ button.filters-btn:hover{
     margin-bottom: 5px;
 }
 
-/****** ACTIVITES ***********/
+/*------------- Activités -------------*/
 .section-activites{
     display: flex;
     flex-direction: column;
@@ -418,6 +421,26 @@ button.filters-btn:hover{
     display: flex;
     flex-direction: column;
 }
+
+/* --------------------- FOOTER ----------------------*/
+.main-footer{
+    display: flex;
+    width: 83.8rem;
+    background-color: var(--grey, #F2F2F2);
+}
+
+.main-footer-bloc, .main-footer-bloc ul{
+    display: flex;
+    flex-direction: column;
+    gap: 0.9375rem;
+}
+
+.main-footer-bloc{
+    padding: 20px;
+    width: 33%;
+}
+
+
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
