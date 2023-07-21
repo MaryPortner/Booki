@@ -173,7 +173,7 @@ input[type=search]{
 
 input::placeholder{
     color: var(--black, );
-    opacity: 1;
+    opacity: 0.25;
 }
 
 input[value=Rechercher]{
@@ -238,10 +238,13 @@ button.filters-btn:hover{
     color: var(--grey, #F2F2F2);
 }
 
-.sections-cards{
+.sections-cards-footer,.sections-cards-footer-main{
     display: flex;
     flex-direction: column;
     gap: 1.875rem;
+}
+
+.sections-cards-footer{
     padding: 0 50px;
 }
 
