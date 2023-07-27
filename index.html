@@ -19,7 +19,7 @@
             <div class="logo">
                 <img class="logo-img" src="images/logo/Booki@3x.png" alt="logo accueil site Booki" >
             </div>
-            <nav role="navigation" class="header-navigation" aria-label="main-navigation">
+            <nav class="header-navigation" aria-label="main-navigation">
                 <ul class="header-navigation-list">
                     <li class="header-navigation-item">
                         <a href="#hebergement">Hébergement</a>
@@ -29,20 +29,21 @@
                     </li>
                 </ul>
             </nav>
-        </header>
+        </header>  
 
-        <div class="main-cards">
+        <div class="main-content">
             <section class="search-filter-header">
                 <div class="banner-header">
                     <h1 class="banner-header-title">Trouvez votre hébergement pour des vacances de rêve</h1>
                     <p class="banner-header-text">En plein centre-ville ou en pleine nature</p>
                 </div>
-                <form class="search-header" method="get" action="" role="search">
+                <form class="search-header" method="get" action="file:///Users/mary/Desktop/OPENCLASSROOMS-FORMATION/PROJET%20BOOKI/Booki/index.html" role="search">
                     <div class="search-header-form">
                         <img class="icone-location" aria-hidden="true" src="images/icones/location.svg" alt="logo accueil site Booki">
                         <label class="sr-only" for="search">Rechercher</label>
-                        <input id="search" class="search-header-input" type="search" name="search" placeholder="Marseille, France"/>  
-                        <input class="search-header-submit"type="submit" value="Rechercher" />
+                        <input id="search" class="search-header-input" type="search" name="search">  
+                        <input class="search-header-submit" type="submit" value="Rechercher">
+                        <input class="search-header-submit-icone" type="submit" value="">
                     </div>
                 </form>
     
@@ -116,7 +117,6 @@
                                                     <span class="sr-only">Note de 4 sur 5</span>
                                                 </div>
                                             </div>
-     
                                         </div>
                                     </article>
                                 </a>
@@ -140,7 +140,9 @@
                                         </div>
                                     </article>
                                 </a>
-    
+                            </div>
+
+                            <div class="hebergement-cards">
                                 <a href="#">   
                                     <article class="card hebergement-card-article">
                                         <img class="hebergement-card-img" src="./images/hebergements/annie-spratt.jpg" alt="Image de la chambre d'hôtel montrant un lit double et un canapé">
@@ -166,7 +168,7 @@
                                         <img class="hebergement-card-img" src="./images/hebergements/marcus-loke.jpg" alt="Image de la chambre de l'auberge montrant un lit superposé simple devant une fenêtre">
                                         <div class="card-content">   
                                             <div class="card-txt">
-                                                <h3 class="card-title">Auberge La Canebière</h3>
+                                                <h3 class="card-title title-hebergement-populaire">Auberge La Canebière</h3>
                                                 <p class="card-subtitle">Nuit à partir de 25<span class="euro">€</span></p>
                                             </div>
                                             <div class="card-rating">
@@ -200,8 +202,8 @@
                                         </div>
                                     </article>
                                 </a>
-                                <p id="afficher-plus" class="afficher-plus"><a href="#" >Afficher plus</a></p>
                             </div>
+                            <p id="afficher-plus" class="afficher-plus"><a href="#" >Afficher plus</a></p>
                         </section>
         
                         <section class="populaires">
@@ -212,7 +214,7 @@
     
                             <div class="populaires-cards">
                                 <article class="card">
-                                    <img src="./images/hebergements/emile-guillemot.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                                    <img src="./images/hebergements/emile-guillemot.jpg" alt="Image de la chambre d'hôtel montrant un lit double">
                                     <div class="card-content">
                                         <div class="card-txt">
                                             <h3 class="card-title">Hôtel Le soleil du matin</h3>
@@ -233,7 +235,7 @@
                                     <img src="./images/hebergements/aw-creative.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                                     <div class="card-content">
                                         <div class="card-txt">
-                                            <h3 class="card-title">Chambres d’hôtes Au cœur de l’eau</h3>
+                                            <h3 class="card-title title-hebergement-populaire">Chambres d’hôtes Au cœur de l’eau</h3>
                                             <p class="card-subtitle">Nuit à partir de 71<span class="euro">€</span></p>
                                         </div>
                                         <div class="card-rating">
@@ -273,28 +275,28 @@
                         <div class="section-activites-cards">
                             <a href="#">  
                                 <article class="card activite-card-article">
-                                    <img class="activite-card-img" src="./images/activites/reno-laithienne.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                                    <img class="activite-card-img" src="./images/activites/reno-laithienne.jpg" alt="Vieux port de Marseille">
                                     <h3 class="card-title">Vieux-port</h3>
                                 </article>
                             </a>
         
                             <a href="#">
                                 <article class="card activite-card-article">
-                                    <img class="activite-card-img"src="./images/activites/paul-hermann.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                                    <img class="activite-card-img" src="./images/activites/paul-hermann.jpg" alt="Fort de Pomègues">
                                     <h3 class="card-title">Fort de Pomègues</h3>
                                 </article>
                             </a>
         
                             <a href="#">
                                 <article class="card activite-card-article">
-                                    <img class="activite-card-img" src="./images/activites/kilyan-sockalingum.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                                    <img class="activite-card-img" src="./images/activites/kilyan-sockalingum.jpg" alt="Parc National des Calanques">
                                     <h3 class="card-title">Parc national des Calanques</h3>
                                 </article>
                             </a>
         
                             <a href="#">
                                 <article class="card activite-card-article">
-                                    <img class="activite-card-img" src="./images/activites/florian-wehde.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                                    <img class="activite-card-img" src="./images/activites/florian-wehde.jpg" alt="Notre-Dames-de-la-Garde à Marseille">
                                     <h3 class="card-title">Notre-Dames-de-la-Garde</h3>
                                 </article>
                             </a>
