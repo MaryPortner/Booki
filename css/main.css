@@ -539,7 +539,7 @@ margin: 0;
     }
 
     .hebergements-and-populaires section {
-        padding: 15px;
+        padding: 30px 15px;
     }
     
     .hebergements-and-populaires {
@@ -574,14 +574,14 @@ margin: 0;
         margin-right: -10px;
     }
 
-    .section-activites{
+    /* .section-activites{
         display: flex;
         flex-direction: column;
         gap: 30px;
         width: 100%;
         height: auto;
         padding: 30px;
-    }
+    } */
 
     .section-activites-cards{
         height: 270px;
@@ -634,7 +634,6 @@ margin: 0;
         width: 100%;
     }
 
-
     li.header-navigation-item  a:hover{
         border-top: none;
         border-bottom: solid 0.125rem var(--blue, #0065FC);
@@ -649,10 +648,10 @@ margin: 0;
         width: 250px;
     } */
 
-
     .main-content {
-        padding: 0 15px;
-      }
+        padding: inherit;
+    }
+
     input[value=Rechercher]{
         display: none;
     }
@@ -668,14 +667,18 @@ margin: 0;
         margin-left: -11px;
     }
 
+    .search-filter-header{
+        padding: 0 12px;
+    }
+
     .filters-bar{
         gap:0.5rem;
     }
 
     .filter-bar-buttons{
         display: flex;
-        width: 300px;
         flex-wrap: wrap;
+        width: 300px;
     }
 
     .filters-btn{
@@ -683,10 +686,56 @@ margin: 0;
         padding: 4px 10px;
     }
 
- 
+    .hebergements-and-populaires {
+        flex-direction: column-reverse;
+    }
 
+    .populaires {
+        justify-content: center;
+        margin-top: inherit;
+    }
 
+    .populaires-cards{
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .populaires-cards .card, .hebergement-cards {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .hebergement-cards{
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #hebergement{
+        background-color: inherit;
+    }
+
+    .section-activites{
+        padding: 30px 15px;
+    }
+
+    .section-activites-cards {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .section-activites-cards a {
+        width: 278px;
+    }
+
+    .main-footer{
+        flex-direction: column;
+    }
+
+    .main-footer-bloc {
+        width: inherit;
+      }
 
 }
 
